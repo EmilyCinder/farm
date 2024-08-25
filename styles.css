@@ -29,14 +29,70 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3 {
-    color: var(--color-orange);
-    margin-bottom: 0.5em;
+nav {
+    background-color: var(--color-green); 
+    padding: 1em;
+    
+   
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06A816;
+    padding: 1em;
+    color: white;
+}
+
+.navbar div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin: 0;
+}
+
+.navbar h1, .navbar p {
+    margin: 0;
+}
+
+.navbar .button {
+    background-color: #E75D02;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--color-green); 
+    padding: 1em;
+    color: var(--color-white); 
+    text-align: center; 
+}
+
+
 
 h1 {
     font-family: var(--font-irish-grover);
     font-size: var(--font-size-h1);
+    color: var(--color-white)
 }
 
 h2 {
