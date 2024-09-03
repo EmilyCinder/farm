@@ -29,20 +29,15 @@ body {
     line-height: 1.5;
 }
 
-nav {
-    background-color: var(--color-green); 
-    padding: 1em;
-    
-   
-}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #06A816;
+    background-color: var(--color-green);
     padding: 1em;
     color: white;
+    flex-wrap: wrap;
 }
 
 .navbar div {
@@ -52,39 +47,31 @@ nav {
     margin: 0;
 }
 
-.navbar h1, .navbar p {
+.navbar h1,
+.navbar p {
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.navbar .button {
-    background-color: #E75D02;
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: var(--color-orange);
     color: white;
     padding: 0.5em 1em;
     border: 2px solid var(--color-white);
-   
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
-    margin-right: 10em; 
     cursor: pointer;
-    width: 300px; 
     text-align: center;
     display: inline-block;
+    width: auto;
 }
 
-
-
-
-
-
-body {
-    font-family: var(--font-habibi);
-    font-size: var(--font-size-text);
-    color: var(--color-black);
-    background-color: var(--color-white);
-    line-height: 1.5;
-}
 
 .grid-container {
     display: grid;
@@ -121,6 +108,24 @@ body {
     box-sizing: border-box;
 }
 
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 150px;
+    background-color: #E75D02;
+    color: white;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+    display: block;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
 
 
 
@@ -211,19 +216,26 @@ h3 {
 /*-------------------- MEDIA QUERY (small) --------------------------------*/
 @media (min-width: 428px) {
     
+   
+
+    
 }
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media (min-width: 834px) {
     
+    
+    
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media (min-width: 1280px) {
+   
+   
     
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media (min-width: 1440px) {
-   
+    
 }
